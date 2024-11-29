@@ -10,7 +10,7 @@ SELECT t1.id
                   LOWER(TRIM(REGEXP_REPLACE(NORMALIZE(email, NFD),r"\pM",'') )) --end of false
       ) as email_clean_s1  --normalizing and replacing accented letter by equivalent letter without the accentuation
 
-FROM   `database.dataset.table` t1 
+FROM   `project.dataset.table` t1 
 
 
 )
